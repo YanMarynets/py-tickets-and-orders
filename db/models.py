@@ -80,7 +80,7 @@ class Order(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"<Order: {self.created_at}>"
+        return str(self.created_at)
 
     class Meta:
         ordering = ["-created_at"]
